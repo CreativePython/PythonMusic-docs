@@ -1,0 +1,16 @@
+__pycache__/
+
+.python-version
+.DS_Store
+
+.vscode/
+.claude/
+.zed/
+.idea/
+.cursorrules
+.cursorignore
+.cursor/
+.kilocode/
+
+*venv*/
+site/
