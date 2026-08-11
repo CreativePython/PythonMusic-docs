@@ -69,8 +69,8 @@ programs are meant to be used in different ways.
 but only for non-commercial purposes, as long as you give credit and license 
 your adaptations under the same terms.
 
-**Example programs in `docs/examples/_snippets/` — [CC-BY-NC-SA-4.0](LICENSE).
-** Share and adapt them, but only for non-commercial purposes, as long as you 
+**Example programs in `docs/examples/_snippets/` — [CC-BY-NC-SA-4.0](LICENSE).** 
+Share and adapt them, but only for non-commercial purposes, as long as you 
 give credit and license your adaptations under the same terms.
 
 The PythonMusic library is licensed separately in its
