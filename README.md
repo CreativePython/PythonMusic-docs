@@ -63,21 +63,20 @@ picking up a new release without changing any content.
 ## License
 
 This repository is deliberately split, because the writing and the example
-programs are meant to be reused in different ways.
+programs are meant to be used in different ways.
 
-**Prose, images, and audio — [CC BY-SA 4.0](LICENSE).** Share and adapt them,
-including commercially, as long as you give credit and license your adaptations
-under the same terms.
+**Prose, images, and audio — [CC-BY-NC-SA-4.0](LICENSE).** Share and adapt them, 
+but only for non-commercial purposes, as long as you give credit and license 
+your adaptations under the same terms.
 
-**Example programs in `docs/examples/_snippets/` — [CC0 1.0](docs/examples/_snippets/LICENSE)
-(public domain).** No attribution, no conditions. Copy them into your
-assignments, your own teaching material, or anything else, and do as you like
-with the result. They are teaching examples, and meant to be used freely.
+**Example programs in `docs/examples/_snippets/` — [CC-BY-NC-SA-4.0](LICENSE).
+** Share and adapt them, but only for non-commercial purposes, as long as you 
+give credit and license your adaptations under the same terms.
 
 The PythonMusic library is licensed separately in its
 [own repository](https://github.com/CreativePython/PythonMusic).
 
 When attribution is required, please credit:
 
-> PythonMusic documentation, by Bill Manaris and Taj Ballinger
+> PythonMusic documentation, by Bill Manaris, Taj Ballinger, and Marge Marshall
 > — https://pythonmusic.org
