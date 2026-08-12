@@ -24,6 +24,7 @@ not_in_nav: |
   !/api/**/index.md
   !/api/**/constants.md
   /articles/*.md
+  troubleshoot.md
 
 hooks:
   - overrides/navtools.py     # nav rules for the mega-menu + left ToC (shared)
