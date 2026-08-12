@@ -14,7 +14,7 @@ To install PythonMusic, simply download **PEM** (Python Environment for Music) e
 
 <figure markdown="span">
   ![PEM Editor](images/pem_playnote3.png)
-  <!-- <figcaption>PEM editor window (in MacOS)</figcaption> -->
+  <!-- <figcaption>PEM editor window (in macOS)</figcaption> -->
 </figure>
 
 PEM is bundled with all PythonMusic libraries, and other essential Python libraries.  It should be enough for most uses. 
@@ -30,7 +30,7 @@ PEM is bundled with all PythonMusic libraries, and other essential Python librar
 
 ### Mac
 
-1. [Download PEM for MacOS](https://github.com/CreativePython/PythonMusic/releases/latest/download/PEM-macOS-AppleSilicon.tar.gz).
+1. [Download PEM for macOS](https://github.com/CreativePython/PythonMusic/releases/latest/download/PEM-macOS-AppleSilicon.tar.gz).
 2. Double-click the downloaded file to extract **PEM**.
 3. Move **PEM** to your Applications folder.
 4. Double-click PEM to run.
@@ -38,7 +38,7 @@ PEM is bundled with all PythonMusic libraries, and other essential Python librar
 
 #### Mac Security Issue
 
-Some versions of MacOS flag the PEM application as damaged (or malware).  This is a common issue caused by Apple's strict security protocols, and does not mean the application is unsafe. If so:
+Some versions of macOS flag the PEM application as damaged (or malware).  This is a common issue caused by Apple's strict security protocols, and does not mean the application is unsafe. If so:
 
 1. Select “Cancel” (not "Move to Trash"!).
 2. Open System Settings. 
@@ -75,19 +75,22 @@ PythonMusic comes with [online examples](examples/index.md).  You can also [down
 
 ## Install via pip (Advanced)
 
-For more advanced users, install PythonMusic via ```pip```.  This provides access to the full Python ecosystem of libraries:
+For more advanced users, install PythonMusic via ```pip```.  This lets you use PythonMusic alongside the full Python ecosystem of libraries:
 
-1. Make sure you have [Python3](https://www.python.org/downloads/) installed (version 3.12 or greater). 
+1. Make sure you have [Python3](https://www.python.org/downloads/) installed (version 3.12 preferred). 
 2. Open Terminal, and type: 
 
 ```
 pip install PythonMusic
 ```
 
-**TIP:** PythonMusic works on Python 3.12 and later, but Python 3.12 is the smoothest install.  A few of PythonMusic's dependencies don't yet offer ready-made versions for Python 3.13 and 3.14, so on those versions ```pip``` has to build them on your computer — which needs the extra tools described under [Troubleshooting](#troubleshooting).  If you'd rather not set those up, install Python 3.12.
+If this fails, see [Troubleshooting Pip](troubleshoot.md).
+
+### Other Python Versions
+PythonMusic works on Python 3.12 and later, but Python 3.12 is the smoothest install.  A few of PythonMusic's dependencies don't yet offer ready-made versions for Python 3.13 and 3.14, so on those versions ```pip``` has to build them on your computer — which needs the extra tools described under [Troubleshooting Pip](troubleshoot.md).  If you'd rather not set those up, install Python 3.12.
 
 
-### PEM
+### PEM with pip
 
 Once PythonMusic is installed with ```pip```, you can access PEM via the command line:  
 
@@ -113,49 +116,8 @@ or
 pem <filename.py>
 ```
 
-### Troubleshooting
-
-Most ```pip install``` problems come from the same cause.  A few of PythonMusic's dependencies are written partly in C or C++.  When a ready-made version isn't available for your computer, ```pip``` builds that dependency from its source code instead — and building needs tools that don't come with Python.
-
-You are seeing this if the installation stops with a message like:
-
-- ```CMake configuration failed```
-- ```Failed building wheel for python-rtmidi```
-- ```Failed building wheel for pyaudio```
-- ```error: command 'clang' failed```
-- ```error: Microsoft Visual C++ 14.0 or greater is required```
-
-The fix is to install the missing tools, then run ```pip install PythonMusic``` again.
-
-#### Step 1: Install the C/C++ build tools
-
-This is what ```pip``` needs in order to build anything at all, and it resolves most of the errors above.
-
-- **On Windows**, download and install [Visual Studio Build Tools 2022](https://visualstudio.microsoft.com/downloads/).  In the Visual Studio installer, make sure "Desktop Development with C++" is checked.
-
-- **On MacOS**, open Terminal and type:
-
-```
-xcode-select --install
-```
-
-A dialog will appear — click "Install" to install Apple's Command Line Tools and wait for it to finish.
-
-Restart your computer, then try installing PythonMusic again.
-
-#### Step 2 (MacOS only): Install PortAudio
-
-If the installation still stops with ```Failed building wheel for pyaudio```, or mentions ```fatal error: 'portaudio.h' file not found```, you also need PortAudio — a sound library that PythonMusic uses to play audio.
-
-The easiest way to get it is with [Homebrew](https://brew.sh), a package manager for MacOS.  If you don't already have Homebrew, follow the one-line install command on [brew.sh](https://brew.sh).  Then, in Terminal, type:
-
-```
-brew install portaudio
-```
-
-Then try installing PythonMusic again.
-
 ---
+
 ## Test your Installation
 
 To verify that your environment is set up correctly, run the following "Hello, World!" program:
