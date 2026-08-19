@@ -49,7 +49,8 @@ change. `mkdocs build` always starts fresh.
 - `release_info.py` — replaces `%%version%%` and `%%date%%` on any page with the
   latest release from the library repo, so the download page never quotes a
   stale version by hand. If GitHub can't be reached the build still succeeds and
-  leaves the placeholders alone.
+  leaves the placeholders alone. Because the lookup happens at build time, a new
+  release only reaches the site once the site is rebuilt — see below.
 
 ## Deploying
 
@@ -57,6 +58,16 @@ Pushing to `main` builds the site and publishes it to GitHub Pages
 automatically (`.github/workflows/deploy-docs.yml`). You can also trigger a
 rebuild from the Actions tab with the **Run workflow** button — useful for
 picking up a new release without changing any content.
+
+The site also rebuilds itself nightly, which is how a new PythonMusic release
+reaches the download page: `release_info.py` looks the version up at build time,
+so the page keeps quoting the previous release until something rebuilds it. A
+release published today is live by tomorrow. Use **Run workflow** if you'd
+rather not wait.
+
+Note that GitHub disables scheduled workflows in a repo with no activity for 60
+days, and emails you when it does. If the version on the download page ever
+looks stuck, check that the schedule is still enabled in the Actions tab.
 
 `docs/CNAME` holds the custom domain and is copied into the published site.
 

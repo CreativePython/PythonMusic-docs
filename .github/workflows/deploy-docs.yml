@@ -1,9 +1,9 @@
 name: Deploy docs
 
 # Build the MkDocs site and publish it to GitHub Pages.
-# Runs only when a push to main actually changes the docs (or this workflow),
-# so ordinary code pushes don't trigger a site rebuild. Use the "Run workflow"
-# button (workflow_dispatch) to force a rebuild any time.
+# Runs when a push to main actually changes the docs (so ordinary pushes don't
+# trigger a rebuild), and nightly to pick up new PythonMusic releases. Use the
+# "Run workflow" button (workflow_dispatch) to force a rebuild any time.
 # Requires: Settings -> Pages -> Source: "GitHub Actions".
 on:
   push:
@@ -14,6 +14,13 @@ on:
       - "overrides/**"
       - ".github/workflows/deploy-docs.yml"
   workflow_dispatch:
+
+  # Rebuild nightly so a new PythonMusic release reaches the site on its own.
+  # release_info.py stamps the version and date into download.md at build time
+  # rather than fetching them in the reader's browser, so the page only changes
+  # when the site is rebuilt. A release published today shows up by tomorrow.
+  schedule:
+    - cron: "17 7 * * *" # 07:17 UTC daily, off the hour to dodge the rush
 
 permissions:
   contents: read
@@ -41,7 +48,13 @@ jobs:
 
       # Add --strict to fail the build on warnings (e.g. nav/link issues) once
       # the nav and files are fully in sync.
+      #
+      # release_info.py calls the GitHub API to look up the latest PythonMusic
+      # release. Handing it a token lifts that call off the 60-per-hour
+      # anonymous rate limit, which Actions runners share by IP address.
       - run: mkdocs build
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - uses: actions/upload-pages-artifact@v3
         with:

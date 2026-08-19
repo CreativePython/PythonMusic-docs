@@ -16,6 +16,7 @@ leave the placeholders untouched rather than fail the build.
 
 import json
 import logging
+import os
 import urllib.request
 from datetime import datetime
 
@@ -29,10 +30,16 @@ _release_info = None
 
 def _fetch_release_info():
     """Return (version, date) for the latest release, or None if unavailable."""
-    request = urllib.request.Request(
-        _LATEST_RELEASE_API,
-        headers={"Accept": "application/vnd.github+json"},
-    )
+    headers = {"Accept": "application/vnd.github+json"}
+
+    # Anonymous API calls share a 60-per-hour budget with everything else on the
+    # same IP, which on a CI runner is a coin flip. The deploy workflow hands us
+    # a token to spend instead; locally there usually isn't one, and that's fine.
+    token = os.environ.get("GITHUB_TOKEN")
+    if token:
+        headers["Authorization"] = f"Bearer {token}"
+
+    request = urllib.request.Request(_LATEST_RELEASE_API, headers=headers)
     with urllib.request.urlopen(request, timeout=10) as response:
         release = json.load(response)
 
