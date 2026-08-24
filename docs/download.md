@@ -34,7 +34,8 @@ Some Windows systems flag `PEM.exe` as malware. This is a common issue caused by
 1. Click "More info" on the warning screen.
 2. Select "Run anyway" (you need to be logged as Administrator to see this option).
 
-**If deleted or blocked by Windows Defender (Antivirus):**
+If deleted or blocked by Windows Defender (Antivirus):
+
 1. Open "Windows Security" from your Start menu.
 2. Navigate to "Virus & threat protection > Protection history".
 3. Locate the blocked `PEM.exe` file, click on it, and select "Allow on device" or "Restore". 
