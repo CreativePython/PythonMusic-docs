@@ -28,6 +28,18 @@ PEM is bundled with all PythonMusic libraries, and other essential Python librar
 3. Double-click **PEM.exe** to run.
 4. (Optional) Right-click PEM.exe, and select "Create Shortcut". Move this shortcut to your Desktop for easy access.
 
+#### Windows Security Issue
+Some Windows systems flag `PEM.exe` as malware. This is a common issue caused by Windows strict security protocols, and does not mean the application is unsafe. If so:
+
+1. Click "More info" on the warning screen.
+2. Select "Run anyway" (you need to be logged as Administrator to see this option).
+
+**If deleted or blocked by Windows Defender (Antivirus):**
+1. Open "Windows Security" from your Start menu.
+2. Navigate to "Virus & threat protection > Protection history".
+3. Locate the blocked `PEM.exe` file, click on it, and select "Allow on device" or "Restore". 
+4. Extract `PEM.exe` from the .zip file again, if the executable was deleted.
+
 ### Mac
 
 1. [Download PEM for macOS](https://github.com/CreativePython/PythonMusic/releases/latest/download/PEM-macOS-AppleSilicon.tar.gz).
@@ -40,10 +52,10 @@ PEM is bundled with all PythonMusic libraries, and other essential Python librar
 
 Some versions of macOS flag the PEM application as damaged (or malware).  This is a common issue caused by Apple's strict security protocols, and does not mean the application is unsafe. If so:
 
-1. Select “Cancel” (not "Move to Trash"!).
+1. Select "Cancel" (not "Move to Trash"!).
 2. Open System Settings. 
-3. In “Privacy & Security”, scroll down to see a Security alert for PEM. 
-4. Select “Allow”, and open PEM again.
+3. In "Privacy & Security", scroll down to see a Security alert for PEM. 
+4. Select "Allow", and open PEM again.
 
 Alternatively - after you move PEM to the Applications folder:
 
