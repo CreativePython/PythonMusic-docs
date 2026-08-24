@@ -38,7 +38,7 @@ If deleted or blocked by Windows Defender (Antivirus):
 
 1. Open "Windows Security" from your Start menu.
 2. Navigate to "Virus & threat protection > Protection history".
-3. Locate the blocked `PEM.exe` file, click on it, and select "Allow on device" or "Restore". 
+3. Locate the blocked `PEM.exe` file, click on it, and select "Allow on device" (or "Restore"). 
 4. Extract `PEM.exe` from the .zip file again, if the executable was deleted.
 
 ### Mac
