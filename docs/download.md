@@ -4,6 +4,22 @@ hide_localnav: true
 
 # Download
 
+---
+* [Platforms](#platforms)
+* [Download and Install](#download-and-install)
+  * [Windows](#windows)
+    * [Windows Security Issue](#windows-security-issue)
+  * [Mac](#mac)
+    * [Mac Security Issue](#mac-security-issue)
+  * [Linux (and Intel Mac)](#linux-and-intel-mac)
+  * [Previous Versions](#previous-versions)
+* [Download the Examples](#download-the-examples)
+* [Install via pip (Advanced)](#install-via-pip-advanced)
+  * [Other Python Versions](#other-python-versions)
+  * [PEM with pip](#pem-with-pip)
+* [Test your Installation](#test-your-installation)
+---
+
 ## Platforms
 
 PythonMusic runs on Windows, Mac, and Linux.
