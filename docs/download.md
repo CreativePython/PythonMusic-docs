@@ -19,7 +19,17 @@ To install PythonMusic, simply download **PEM** (Python Environment for Music) e
 
 PEM is bundled with all PythonMusic libraries, and other essential Python libraries.  It should be enough for most uses. 
 
-**NOTE:** For more advanced users, see [install PythonMusic via ```pip```](#install-via-pip-advanced). 
+**NOTE:** For more advanced users, see [install PythonMusic via ```pip```](#install-via-pip-advanced).
+
+### Installation Instructions
+
+* [Windows](#windows)
+* [Mac](#mac)
+* [Linux (and Intel Mac)](#linux-and-intel-mac)
+* [Previous Versions](#previous-versions)
+* [Download the Examples](#download-the-examples)
+* [Install via pip (Advanced)](#install-via-pip-advanced)
+* [Test your Installation](#test-your-installation)
 
 ### Windows
 
