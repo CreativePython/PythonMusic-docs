@@ -80,7 +80,7 @@ This material supports the [AP Computer Science Principles Curriculum](articles/
 
 PythonMusic is developed by [Bill Manaris](http://manaris.org/), Taj Ballinger, Trevor Ritchie, Kenneth Hanson, Dana Hughes, David Johnson, Seth Stoudenmier, Christopher Benson, Margaret Marshall, and William Blanchett.
 
-PythonMusic is based on the [jMusic computer-assisted composition framework](http://explodingart.com/jmusic/), created by [Andrew Brown](http://explodingart.com/wp/) and [Andrew Sorensen](https://vimeo.com/andrewsorensen).
+PythonMusic is based on the [jMusic computer-assisted composition framework](http://explodingart.com/jmusic/), created by [Andrew Brown](https://experts.griffith.edu.au/18549-andrew-brown) and [Andrew Sorensen](https://vimeo.com/andrewsorensen).
 
 The PEM editor is based on Python's native [IDLE](https://docs.python.org/3/library/idle.html) editor, as well as the [JEM editor](https://jythonmusic.org/download-3/) by [Tobias Kohn](https://tobiaskohn.ch/) (derived from [TigerJython](https://tigerjython.com/en)).
 
