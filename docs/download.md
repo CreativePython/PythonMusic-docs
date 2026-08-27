@@ -31,6 +31,8 @@ PEM is bundled with all PythonMusic libraries, and other essential Python librar
 * [Install via pip (Advanced)](#install-via-pip-advanced)
 * [Test your Installation](#test-your-installation)
 
+---
+
 ### Windows
 
 1. [Download PEM for Windows](https://github.com/CreativePython/PythonMusic/releases/latest/download/PEM-Windows.zip).
@@ -50,6 +52,8 @@ If deleted or blocked by Windows Defender (Antivirus):
 2. Navigate to "Virus & threat protection > Protection history".
 3. Locate the blocked `PEM.exe` file, click on it, and select "Allow on device" (or "Restore"). 
 4. Extract `PEM.exe` from the .zip file again, if the executable was deleted.
+
+---
 
 ### Mac
 
@@ -77,11 +81,15 @@ Alternatively - after you move PEM to the Applications folder:
 sudo xattr -dr com.apple.quarantine /Applications/PEM.app/
 ```
 
+---
+
 ### Linux (and Intel Mac)
 
 The PEM executable is not available for Linux and Intel-based Macs.
 
 To install PythonMusic see [install via pip](#install-via-pip-advanced).
+
+---
 
 ### Previous Versions
 
