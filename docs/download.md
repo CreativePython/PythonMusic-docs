@@ -26,10 +26,10 @@ PEM is bundled with all PythonMusic libraries, and other essential Python librar
 * [Windows](#windows)
 * [Mac](#mac)
 * [Linux (and Intel Mac)](#linux-and-intel-mac)
-* [Previous Versions](#previous-versions)
 * [Download the Examples](#download-the-examples)
-* [Install via pip (Advanced)](#install-via-pip-advanced)
 * [Test your Installation](#test-your-installation)
+* [Install via pip (Advanced)](#install-via-pip-advanced)
+* [Previous Versions](#previous-versions)
 
 ---
 
@@ -91,16 +91,25 @@ To install PythonMusic see [install via pip](#install-via-pip-advanced).
 
 ---
 
-### Previous Versions
-
-Need an older release?  All previous versions of PEM and PythonMusic are available on the [PythonMusic releases page](https://github.com/CreativePython/PythonMusic/releases) on GitHub.
-
----
-
 ## Download the Examples
 
 PythonMusic comes with [online examples](examples/index.md).  You can also [download them](examples/PythonMusic_Examples.zip){ download }.
 
+---
+
+## Test your Installation
+
+To verify that your environment is set up correctly, Copy and paste the code below directly into the PEM editor, and click "Run":
+
+```python linenums="1" title="playNote.py"
+--8<-- "examples/_snippets/playNote.py"
+```
+
+**NOTE**: The first time you run this program, PythonMusic will ask you to download a high-quality soundfont (FluidR3 G2-2.sf2). Type "y" at the prompt. This will happen only once, and is necessary to play high-quality MIDI sounds.
+
+If you hear this note playing, everything is perfect!
+
+<audio controls preload="none" src="../../audio/playNote.wav"></audio>
 
 ---
 
@@ -147,11 +156,9 @@ or
 pem <filename.py>
 ```
 
----
+### Test your Pip Installation
 
-## Test your Installation
-
-To verify that your environment is set up correctly, run the following "Hello, World!" program:
+To verify that your environment is set up correctly, Copy and paste the code below directly into the PEM editor, and click "Run":
 
 ```python linenums="1" title="playNote.py"
 --8<-- "examples/_snippets/playNote.py"
@@ -167,12 +174,17 @@ You can run this in one of two ways:
 python -i playNote.py
 ```
 
-**NOTE**: The first time you import music and run a program, PythonMusic will ask to download a high-quality soundfont (FluidR3 G2-2.sf2) for you. This is necessary to play high-quality MIDI sounds, and only needs to happen once.
+**NOTE**: The first time you run this program, PythonMusic will ask you to download a high-quality soundfont (FluidR3 G2-2.sf2). Type "y" at the prompt. This will happen only once, and is necessary to play high-quality MIDI sounds.
 
 If you hear this note playing, everything is perfect!
 
 <audio controls preload="none" src="../../audio/playNote.wav"></audio>
 
+---
+
+### Previous Versions
+
+Need an older release?  All previous versions of PEM and PythonMusic are available on the [PythonMusic releases page](https://github.com/CreativePython/PythonMusic/releases) on GitHub.
 
 ---
 
