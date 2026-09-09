@@ -4,8 +4,8 @@ Panning (or panoramic) constants are represented in the music library using real
 
 The music library defines the following panning constants:
 
-| Constant | Value |
-|---|---|
-| `PAN_LEFT` | `0.0` |
-| `PAN_CENTER` | `0.5` |
-| `PAN_RIGHT` | `1.0` |
+```python
+PAN_LEFT   = 0.0
+PAN_CENTER = 0.5
+PAN_RIGHT  = 1.0
+```

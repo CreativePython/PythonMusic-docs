@@ -4,52 +4,99 @@ When using MIDI channel 9 (the MIDI protocol has 16 channels, numbered 0–15), 
 
 The music library defines the following drum sound constants for convenience. According to the MIDI standard, only pitches 35 to 81 are defined.
 
-| Constant | Value |
-|---|---|
-| `ABD`, `ACOUSTIC_BASS_DRUM` | `35` |
-| `BDR`, `BASS_DRUM` | `36` |
-| `STK`, `SIDE_STICK` | `37` |
-| `SNR`, `SNARE` | `38` |
-| `CLP`, `HAND_CLAP` | `39` |
-| `ESN`, `ELECTRIC_SNARE` | `40` |
-| `LFT`, `LOW_FLOOR_TOM` | `41` |
-| `CHH`, `CLOSED_HI_HAT` | `42` |
-| `HFT`, `HIGH_FLOOR_TOM` | `43` |
-| `PHH`, `PEDAL_HI_HAT` | `44` |
-| `LTM`, `LOW_TOM` | `45` |
-| `OHH`, `OPEN_HI_HAT` | `46` |
-| `LMT`, `LOW_MID_TOM` | `47` |
-| `HMT`, `HI_MID_TOM` | `48` |
-| `CC1`, `CRASH_CYMBAL_1` | `49` |
-| `HGT`, `HIGH_TOM` | `50` |
-| `RC1`, `RIDE_CYMBAL_1` | `51` |
-| `CCM`, `CHINESE_CYMBAL` | `52` |
-| `RBL`, `RIDE_BELL` | `53` |
-| `TMB`, `TAMBOURINE` | `54` |
-| `SCM`, `SPLASH_CYMBAL` | `55` |
-| `CBL`, `COWBELL` | `56` |
-| `CC2`, `CRASH_CYMBAL_2` | `57` |
-| `VSP`, `VIBRASLAP` | `58` |
-| `RC2`, `RIDE_CYMBAL_2` | `59` |
-| `HBG`, `HI_BONGO` | `60` |
-| `LBG`, `LOW_BONGO` | `61` |
-| `MHC`, `MUTE_HI_CONGA` | `62` |
-| `OHC`, `OPEN_HI_CONGA` | `63` |
-| `LCG`, `LOW_CONGA` | `64` |
-| `HTI`, `HIGH_TIMBALE` | `65` |
-| `LTI`, `LOW_TIMBALE` | `66` |
-| `HAG`, `HIGH_AGOGO` | `67` |
-| `LAG`, `LOW_AGOGO` | `68` |
-| `CBS`, `CABASA` | `69` |
-| `MRC`, `MARACAS` | `70` |
-| `SWH`, `SHORT_WHISTLE` | `71` |
-| `LWH`, `LONG_WHISTLE` | `72` |
-| `SGU`, `SHORT_GUIRO` | `73` |
-| `LGU`, `LONG_GUIRO` | `74` |
-| `CLA`, `CLAVES` | `75` |
-| `HWB`, `HI_WOOD_BLOCK` | `76` |
-| `LWB`, `LOW_WOOD_BLOCK` | `77` |
-| `MCU`, `MUTE_CUICA` | `78` |
-| `OCU`, `OPEN_CUICA` | `79` |
-| `MTR`, `MUTE_TRIANGLE` | `80` |
-| `OTR`, `OPEN_TRIANGLE` | `81` |
+```python
+ABD                = 35
+ACOUSTIC_BASS_DRUM = 35
+BDR                = 36
+BASS_DRUM          = 36
+STK                = 37
+SIDE_STICK         = 37
+SNR                = 38
+SNARE              = 38
+CLP                = 39
+HAND_CLAP          = 39
+ESN                = 40
+ELECTRIC_SNARE     = 40
+LFT                = 41
+LOW_FLOOR_TOM      = 41
+CHH                = 42
+CLOSED_HI_HAT      = 42
+HFT                = 43
+HIGH_FLOOR_TOM     = 43
+PHH                = 44
+PEDAL_HI_HAT       = 44
+LTM                = 45
+LOW_TOM            = 45
+OHH                = 46
+OPEN_HI_HAT        = 46
+LMT                = 47
+LOW_MID_TOM        = 47
+HMT                = 48
+HI_MID_TOM         = 48
+CC1                = 49
+CRASH_CYMBAL_1     = 49
+HGT                = 50
+HIGH_TOM           = 50
+RC1                = 51
+RIDE_CYMBAL_1      = 51
+CCM                = 52
+CHINESE_CYMBAL     = 52
+RBL                = 53
+RIDE_BELL          = 53
+TMB                = 54
+TAMBOURINE         = 54
+SCM                = 55
+SPLASH_CYMBAL      = 55
+CBL                = 56
+COWBELL            = 56
+CC2                = 57
+CRASH_CYMBAL_2     = 57
+VSP                = 58
+VIBRASLAP          = 58
+RC2                = 59
+RIDE_CYMBAL_2      = 59
+HBG                = 60
+HI_BONGO           = 60
+LBG                = 61
+LOW_BONGO          = 61
+MHC                = 62
+MUTE_HI_CONGA      = 62
+OHC                = 63
+OPEN_HI_CONGA      = 63
+LCG                = 64
+LOW_CONGA          = 64
+HTI                = 65
+HIGH_TIMBALE       = 65
+LTI                = 66
+LOW_TIMBALE        = 66
+HAG                = 67
+HIGH_AGOGO         = 67
+LAG                = 68
+LOW_AGOGO          = 68
+CBS                = 69
+CABASA             = 69
+MRC                = 70
+MARACAS            = 70
+SWH                = 71
+SHORT_WHISTLE      = 71
+LWH                = 72
+LONG_WHISTLE       = 72
+SGU                = 73
+SHORT_GUIRO        = 73
+LGU                = 74
+LONG_GUIRO         = 74
+CLA                = 75
+CLAVES             = 75
+HWB                = 76
+HI_WOOD_BLOCK      = 76
+LWB                = 77
+LOW_WOOD_BLOCK     = 77
+MCU                = 78
+MUTE_CUICA         = 78
+OCU                = 79
+OPEN_CUICA         = 79
+MTR                = 80
+MUTE_TRIANGLE      = 80
+OTR                = 81
+OPEN_TRIANGLE      = 81
+```

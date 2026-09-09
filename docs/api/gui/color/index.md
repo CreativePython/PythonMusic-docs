@@ -7,10 +7,21 @@ Use red, green, and blue to build a color directly. Leave any of the three out a
 Ready-made constants are also available:
 
 ```python
-Color.BLACK,  Color.BLUE,   Color.CYAN,       Color.DARK_GRAY,
-Color.GRAY,   Color.GREEN,  Color.LIGHT_GRAY, Color.MAGENTA,
-Color.ORANGE, Color.PINK,   Color.PURPLE,     Color.RED,
-Color.WHITE,  Color.YELLOW, Color.CLEAR
+Color.BLACK      = Color(  0,   0,   0)
+Color.BLUE       = Color(  0,   0, 255)
+Color.CYAN       = Color(  0, 255, 255)
+Color.DARK_GRAY  = Color( 44,  44,  44)
+Color.GRAY       = Color(128, 128, 128)
+Color.GREEN      = Color(  0, 255,   0)
+Color.LIGHT_GRAY = Color(211, 211, 211)
+Color.MAGENTA    = Color(255,   0, 255)
+Color.ORANGE     = Color(255, 165,   0)
+Color.PINK       = Color(255, 192, 203)
+Color.PURPLE     = Color(128,   0, 128)
+Color.RED        = Color(255,   0,   0)
+Color.WHITE      = Color(255, 255, 255)
+Color.YELLOW     = Color(255, 255,   0)
+Color.CLEAR      = Color(  0,   0,   0,   0)
 ```
 
 All [GUI Shapes](../shapes/index.md) and many other GUI objects use functions like [setColor()](../common/color/setColor.md) and [getColor()](../common/color/getColor.md) with Color objects.

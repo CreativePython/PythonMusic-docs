@@ -496,6 +496,11 @@ body { background-color: var(--pm-page-bg); }
 .md-typeset__table { display: block; }
 .md-typeset table:not([class]) { display: table; width: 100%; }
 
+/* Table text at body size. Material shrinks tables to 0.64rem; match the
+   0.8rem of .md-typeset so rows read like the prose around them. Inline code
+   in a cell then lands on the same 0.85em step it has in a paragraph. */
+.md-typeset table:not([class]) { font-size: 0.8rem; }
+
 /* Horizontal rules only — no vertical/column borders — with thicker rules
    above and below the header row. (collapse so the thick header rule wins at
    the header/body boundary instead of doubling with the first row's border.) */
@@ -514,6 +519,36 @@ body { background-color: var(--pm-page-bg); }
   border-top: 0.12rem solid var(--md-typeset-table-color);
   border-bottom: 0.12rem solid var(--md-typeset-table-color);
 }
+
+/* No cell ever splits a word. Names and types alike stop reading once they're
+   broken — `list[int]` cut after the bracket is as bad as a halved constant —
+   and that's true of every column, not just the first. Costs little: prose
+   columns are mostly spaces, so they still wrap where they always did, and the
+   longest unbreakable token outside column one is ~23 characters.
+   Material breaks words in three places, so all three are undone here:
+   .md-typeset sets overflow-wrap:break-word (inherited by the cell), and
+   .md-typeset code / .md-typeset a each set word-break:break-word directly —
+   inheritance can't reach those, hence the descendant selector. */
+.md-typeset table:not([class]) th,
+.md-typeset table:not([class]) td,
+.md-typeset table:not([class]) th *,
+.md-typeset table:not([class]) td * {
+  word-break: normal;
+  overflow-wrap: normal;
+  hyphens: none;
+}
+
+/* An unbroken name still has to go somewhere, so give the widest tables a
+   scrollbar on narrow screens instead of letting them spill off the panel.
+   Material's own tables scroll (overflow:auto), but that relies on the
+   inline-block above being left alone — display:table drops it, so the wrapper
+   takes the job. Idle at desktop widths; engages only when a row can't fit. */
+.md-typeset__table { overflow-x: auto; }
+
+/* Code blocks at body size. Material sets all code — inline and fenced — to
+   0.85em; the child selector lifts only fenced blocks back to 1em (0.8rem),
+   leaving inline `code` in prose at its smaller step. */
+.md-typeset pre > code { font-size: 1em; }
 
 /* =========================================================================
    Code syntax-highlighting knobs
