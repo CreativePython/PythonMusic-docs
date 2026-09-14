@@ -8,7 +8,7 @@ from music import *
 autumnLeavesScore = Score("Autumn Leaves (Jazz Trio)", 140) # 140 bpm
 
 trumpetPart = Part(TRUMPET, 0)       # trumpet to MIDI channel 0
-vibesPart  = Part(VIBES, 1)          # vibraphone to MIDI channel 1
+vibesPart   = Part(VIBES, 1)          # vibraphone to MIDI channel 1
 bassPart    = Part(ACOUSTIC_BASS, 2) # bass to MIDI channel 2
 
 melodyPhrase = Phrase()   # holds the melody
