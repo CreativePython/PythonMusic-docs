@@ -19,7 +19,7 @@ theme.addNoteList(pitches2, durations2)
 theme.addNoteList(pitches3, durations3)
 
 # set the instrument and tempo for the theme
-theme.setInstrument(SYNTH_BASS_2)
+theme.setInstrument(SYNTH_BASS2)
 theme.setTempo(220)
 
 # play it
