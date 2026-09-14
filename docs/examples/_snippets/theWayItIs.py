@@ -1,6 +1,6 @@
 # theWayItIs.py
 # Plays main chord progression from Bruce Hornsby's
-# &amp;quot;The Way It Is&amp;quot; (1986).
+# "The Way It Is" (1986).
 
 from music import *
 
