@@ -2,6 +2,8 @@
 
 Return the object's vertical center.
 
+The object rotates about its center, so this is always the same as [getBoundingCenterY()](getBoundingCenterY.md).
+
 If the object is a [Display](../../display/index.md), this returns the vertical center of the display's canvas.
 
 ## Parameters

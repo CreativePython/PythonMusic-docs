@@ -2,6 +2,8 @@
 
 Return the object's horizontal center.
 
+The object rotates about its center, so this is always the same as [getBoundingCenterX()](getBoundingCenterX.md).
+
 If the object is a [Display](../../display/index.md), this returns the horizontal center of the display's canvas.
 
 ## Parameters
