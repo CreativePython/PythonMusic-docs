@@ -11,21 +11,23 @@ CheckBox()
 ```
 
 ```python
-CheckBox(text, action, color)
+CheckBox(text, action, color, textColor, font, rotation, visibility)
 ```
 
 | Parameter | Type | Default | Description |
 |---|---|---|---|
 | `text` | `str` | `''` | The text shown beside the checkbox. |
 | `action` | `function` | `None` | The function to call when the checkbox changes; it receives one parameter, `True` if it was just checked or `False` if it was just unchecked. |
-| `color` | `Color` | `Color.CLEAR` | The checkbox color. |
+| `color` | `Color` | `Color.CLEAR` | The color behind the box and its text. |
+| `textColor` | `Color` | `Color.BLACK` | The text color. |
+| `font` | `Font` | `None` | The font, for example `Font("Serif", Font.ITALIC, 16)`. If omitted, the default font (Arial, size 13) is used. |
 | `rotation` | `int or float` | `0` | How far to turn the checkbox, in degrees, counter-clockwise. |
 | `visibility` | `int` | `100` | How visible the checkbox is, from 0 (invisible) to 100 (fully visible). |
 
 For example,
 
 ```python
-checkbox = Checkbox("Check Me Out!")
+checkbox = CheckBox("Check Me Out!")
 ```
 
 Once created, you can add it to a [Display](../../display/index.md) using the Display's [add()](../../display/add.md) function.
@@ -38,8 +40,12 @@ Once a CheckBox has been created, the following functions are available:
 |---|---|
 | [`getText()`](getText.md) | Return the checkbox's text. |
 | [`setText(text)`](setText.md) | Set the checkbox's text. |
-| [`getColor()`](../../common/color/getColor.md) | Return the checkbox's color. |
-| [`setColor(color)`](../../common/color/setColor.md) | Set the checkbox's color. |
+| [`getColor()`](../../common/color/getColor.md) | Return the checkbox's background color. |
+| [`setColor(color)`](../../common/color/setColor.md) | Set the checkbox's background color. |
+| [`getTextColor()`](getTextColor.md) | Return the checkbox's text color. |
+| [`setTextColor(color)`](setTextColor.md) | Set the checkbox's text color. |
+| [`getFont()`](getFont.md) | Return the checkbox's font. |
+| [`setFont(font)`](setFont.md) | Set the checkbox's font. |
 | [`check()`](check.md) | Check the checkbox. |
 | [`uncheck()`](uncheck.md) | Uncheck the checkbox. |
 | [`isChecked()`](isChecked.md) | Report whether the checkbox is checked. |

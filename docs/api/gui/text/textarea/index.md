@@ -13,7 +13,7 @@ TextArea()
 ```
 
 ```python
-TextArea(text, columns, rows, color, font)
+TextArea(text, columns, rows, color, textColor, font, rotation, visibility)
 ```
 
 | Parameter | Type | Default | Description |
@@ -22,7 +22,8 @@ TextArea(text, columns, rows, color, font)
 | `columns` | `int` | `8` | The width of the area, in characters. |
 | `rows` | `int` | `5` | The height of the area, in lines. |
 | `color` | `Color` | `Color.WHITE` | The area's background color. |
-| `font` | `Font` | `None` | The font, for example `Font("Serif", Font.ITALIC, 16)`. If omitted, the default font is used. |
+| `textColor` | `Color` | `Color.BLACK` | The text color. |
+| `font` | `Font` | `None` | The font, for example `Font("Serif", Font.ITALIC, 16)`. If omitted, the default font (Arial, size 13) is used. |
 | `rotation` | `int or float` | `0` | How far to turn the area, in degrees, counter-clockwise. |
 | `visibility` | `int` | `100` | How visible the area is, from 0 (invisible) to 100 (fully visible). |
 
@@ -44,6 +45,8 @@ Once a TextArea has been created, the following functions are available:
 | [`setText(text)`](setText.md) | Set the text in the area. |
 | [`getColor()`](../../common/color/getColor.md) | Return the area's background color. |
 | [`setColor(color)`](../../common/color/setColor.md) | Set the area's background color. |
+| [`getTextColor()`](getTextColor.md) | Return the area's text color. |
+| [`setTextColor(color)`](setTextColor.md) | Set the area's text color. |
 | [`getFont()`](getFont.md) | Return the area's font. |
 | [`setFont(font)`](setFont.md) | Set the area's font. |
 

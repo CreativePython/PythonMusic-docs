@@ -2,6 +2,8 @@
 
 Return the label's background [Color](../../color/index.md).
 
+Same as [getColor()](../../common/color/getColor.md).
+
 ## Parameters
 
 Once an object `label` has been created, you can use the following function:

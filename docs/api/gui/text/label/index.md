@@ -2,6 +2,8 @@
 
 Create a label that shows a line of text.
 
+A label starts out just big enough for its text.  If you give it another size (with [setSize()](../../common/size/setSize.md), or with `resize=False` in [setText()](setText.md) or [setFont()](setFont.md)), the text lines up inside it by the label's alignment, centered top to bottom, and any text that does not fit is cut off.
+
 ## Creating a Label
 
 You can create a Label using the following functions:
@@ -20,7 +22,7 @@ Label(text, alignment, textColor, backgroundColor, font, visibility)
 | `alignment` | `int` | `LEFT` | How the text lines up, one of `LEFT`, `CENTER`, or `RIGHT`. |
 | `textColor` | `Color` | `Color.BLACK` | The text color. |
 | `backgroundColor` | `Color` | `Color.CLEAR` | The color behind the text. Defaults to transparent. |
-| `font` | `Font` | `None` | The font, for example `Font("Serif", Font.ITALIC, 16)`. If omitted, the system default font is used. |
+| `font` | `Font` | `None` | The font, for example `Font("Serif", Font.ITALIC, 16)`. If omitted, the default font (Arial, size 13) is used. |
 | `visibility` | `int` | `100` | How visible the label is, from 0 (invisible) to 100 (fully visible). |
 
 For example,
@@ -43,10 +45,12 @@ Once a Label has been created, the following functions are available:
 | [`setAlignment(alignment)`](setAlignment.md) | Set how the label's text lines up. |
 | [`getFont()`](getFont.md) | Return the label's font. |
 | [`setFont(font)`](setFont.md) | Set the label's font. |
+| [`getColor()`](../../common/color/getColor.md) | Return the label's background color. |
+| [`setColor(color)`](../../common/color/setColor.md) | Set the label's background color. |
 | [`getTextColor()`](getTextColor.md) | Return the label's text color. |
-| [`setTextColor()`](setTextColor.md) | Set the label's text color. |
-| [`getBackgroundColor()`](getBackgroundColor.md) | Return the label's background color. |
-| [`setBackgroundColor()`](setBackgroundColor.md) | Set the label's background color. |
+| [`setTextColor(color)`](setTextColor.md) | Set the label's text color. |
+| [`getBackgroundColor()`](getBackgroundColor.md) | Return the label's background color.  Same as `getColor()`. |
+| [`setBackgroundColor(color)`](setBackgroundColor.md) | Set the label's background color.  Same as `setColor()`. |
 
 Additionally, the following common functions are available:
 

@@ -42,7 +42,7 @@ Once an Icon has been created, the following functions are available:
 | [`getPixel(column, row)`](getPixel.md) | Return the color of one pixel. |
 | [`setPixel(column, row, color)`](setPixel.md) | Set the color of one pixel. |
 | [`getPixels()`](getPixels.md) | Return every pixel in the image. |
-| [`setPixels(pixels)`](setPixels.md) | Replace every pixel in the image. |
+| [`setPixels(pixels)`](setPixels.md) | Set the pixels of the image from a grid of colors. |
 | [`getBackgroundColor()`](getBackgroundColor.md) | Return the icon's background color. |
 | [`setBackgroundColor()`](setBackgroundColor.md) | Set the icon's background color. |
 | [`crop(x, y, width, height)`](crop.md) | Crop the image to a rectangular region. |

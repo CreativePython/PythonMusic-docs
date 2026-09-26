@@ -2,14 +2,21 @@
 
 Set the text in the area.
 
+By default the area keeps its size, since its text often changes while in use.
+
 ## Parameters
 
-Once an object `area` has been created, you can use the following function:
+Once an object `area` has been created, you can use the following functions:
 
 ```python
 area.setText(text)
 ```
 
+```python
+area.setText(text, resize)
+```
+
 | Parameter | Type | Default | Description |
 |---|---|---|---|
 | `text` | `str` | _required_ | The new contents of the area. |
+| `resize` | `bool` | `False` | `True` to resize the area to fit the new text, or `False` to keep its current size. |

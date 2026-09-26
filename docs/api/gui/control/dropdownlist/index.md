@@ -11,14 +11,16 @@ dropdown = DropDownList()
 ```
 
 ```python
-DropDownList(items, action, color)
+DropDownList(items, action, color, textColor, font, rotation, visibility)
 ```
 
 | Parameter | Type | Default | Description |
 |---|---|---|---|
 | `items` | `list[str]` | `[]` | The items to show, for example ["item1", "item2", "item3"]. |
 | `action` | `function` | `None` | The function to call when an item is picked; it receives one parameter, the selected item as a string. |
-| `color` | `Color` | `Color.LIGHT_GRAY` | The dropdown's background color. |
+| `color` | `Color` | `Color.WHITE` | The dropdown's background color. |
+| `textColor` | `Color` | `Color.BLACK` | The text color. |
+| `font` | `Font` | `None` | The font, for example `Font("Serif", Font.ITALIC, 16)`. If omitted, the default font (Arial, size 13) is used. |
 | `rotation` | `int or float` | `0` | How far to turn the dropdown, in degrees, counter-clockwise (**NOTE:** This can't turn the dropdown items when the list is open - only the box that holds them). |
 | `visibility` | `int` | `100` | How visible the dropdown is, from 0 (invisible) to 100 (fully visible). |
 
@@ -38,8 +40,14 @@ Once a DropDownList has been created, the following functions are available:
 
 | Function | Description |
 |---|---|
+| [`getText()`](getText.md) | Return the selected item. |
+| [`setText(text)`](setText.md) | Select the item with the given text. |
 | [`getColor()`](../../common/color/getColor.md) | Return the dropdown's background color. |
 | [`setColor(color)`](../../common/color/setColor.md) | Set the dropdown's background color. |
+| [`getTextColor()`](getTextColor.md) | Return the dropdown's text color. |
+| [`setTextColor(color)`](setTextColor.md) | Set the dropdown's text color. |
+| [`getFont()`](getFont.md) | Return the dropdown's font. |
+| [`setFont(font)`](setFont.md) | Set the dropdown's font. |
 
 Additionally, the following common functions are available:
 
