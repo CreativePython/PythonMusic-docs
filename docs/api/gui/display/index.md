@@ -15,7 +15,7 @@ Display()
 ```
 
 ```python
-Display(title, width, height, x, y, color)
+Display(title, width, height, x, y, color, antialias)
 ```
 
 | Parameter | Type | Default | Description |
@@ -26,6 +26,7 @@ Display(title, width, height, x, y, color)
 | `x` | `int or float` | `0` | The horizontal position of the window's top-left corner on the screen, in pixels. |
 | `y` | `int or float` | `50` | The vertical position of the window's top-left corner on the screen, in pixels. |
 | `color` | `Color` | `Color.WHITE` | The background color. |
+| `antialias` | `bool` | `True` | Whether to smooth the edges of shapes and text on the display. |
 
 For example,
 
