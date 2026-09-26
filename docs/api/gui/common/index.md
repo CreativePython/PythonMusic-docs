@@ -7,8 +7,8 @@ Many functions are shared across multiple objects in the GUI library.
 | Function | Description |
 |---|---|
 | [`move(x, y)`](position/move.md) | Move the object to a new position. |
-| [`getPosition()`](position/getPosition.md) | Return the object's position, the top-left corner of its bounding box. |
-| [`setPosition(x, y)`](position/setPosition.md) | Move the object so the top-left corner of its bounding box sits at the given point. |
+| [`getPosition()`](position/getPosition.md) | Return the object's position. |
+| [`setPosition(x, y)`](position/setPosition.md) | Move the object to a new position. |
 | [`getX()`](position/getX.md) | Return the object's horizontal position. |
 | [`setX(x)`](position/setX.md) | Set the object's horizontal position. |
 | [`getY()`](position/getY.md) | Return the object's vertical position. |
@@ -19,8 +19,6 @@ Many functions are shared across multiple objects in the GUI library.
 | [`setCenterX(x)`](position/setCenterX.md) | Set the object's horizontal center. |
 | [`getCenterY()`](position/getCenterY.md) | Return the object's vertical center. |
 | [`setCenterY(y)`](position/setCenterY.md) | Set the object's vertical center. |
-| [`getEndpoints()`](position/getEndpoints.md) | Return the object's endpoints. |
-| [`getBoundingBox()`](position/getBoundingBox.md) | Return the smallest upright box that surrounds the object. |
 
 ## Size Functions
 
@@ -44,6 +42,27 @@ Many functions are shared across multiple objects in the GUI library.
 | [`getRotation()`](rotation/getRotation.md) | Return how far the object is turned. |
 | [`setRotation(rotation)`](rotation/setRotation.md) | Turn the object to a given angle. |
 | [`rotate(angle)`](rotation/rotate.md) | Turn the object by an additional angle. |
+
+## Bounding Box Functions
+An object's bounding box is the tight, upright rectangular shape that encloses a GUI object.
+
+<figure markdown="span">
+   ![Bounding Box](../../../images/bounding.jpg)
+</figure>
+
+| Function | Description |
+|---|---|
+| [`getBoundingPosition()`](position/getBoundingPosition.md) | Return the object's position, the top-left corner of its bounding box. |
+| [`getBoundingX()`](position/getBoundingX.md) | Return the object's bounding box horizontal position. |
+| [`getBoundingY()`](position/getBoundingY.md) | Return the object's bounding box vertical position. |
+| [`getBoundingCenter()`](position/getBoundingCenter.md) | Return the object's bounding box center point. |
+| [`getBoundingCenterX()`](position/getBoundingCenterX.md) | Return the object's bounding box horizontal center. |
+| [`getBoundingCenterY()`](position/getBoundingCenterY.md) | Return the object's bounding box vertical center. |
+| [`getBoundingSize()`](size/getBoundingSize.md) | Return the object's bounding box width and height. |
+| [`getBoundingWidth()`](size/getBoundingWidth.md) | Return the object's bounding box width. |
+| [`getBoundingHeight()`](size/getBoundingHeight.md) | Return the object's bounding box height. |
+| [`getEndpoints()`](position/getEndpoints.md) | Return the object's post-rotation endpoints. |
+
 
 ## Visibility Functions
 

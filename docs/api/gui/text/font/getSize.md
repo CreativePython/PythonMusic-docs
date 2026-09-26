@@ -1,6 +1,6 @@
 # getSize()
 
-Return the font's point size.
+Return the font's size.
 
 ## Parameters
 
@@ -16,4 +16,4 @@ font.getSize()
 
 | Value | Type | Description |
 |---|---|---|
-| size | `int` | The point size. |
+| size | `int` | The size, in pixels. |

@@ -2,6 +2,8 @@
 
 Set the label's text [Color](../../color/index.md).
 
+This changes only the color of the text.  To change the label's background color, use [setColor()](../../common/color/setColor.md).
+
 ## Parameters
 
 Once an object `label` has been created, you can use the following functions:

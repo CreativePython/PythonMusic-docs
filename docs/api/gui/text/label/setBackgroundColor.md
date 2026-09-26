@@ -2,6 +2,8 @@
 
 Set the label's background [Color](../../color/index.md).
 
+Same as [setColor()](../../common/color/setColor.md).
+
 ## Parameters
 
 Once an object `label` has been created, you can use the following functions:

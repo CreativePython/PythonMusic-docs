@@ -1,6 +1,8 @@
 # getSize()
 
-Return the object's width and height.  These are the size of its upright bounding box, so they grow as the object rotates.
+Return the object's width and height.
+
+These are the object's own size before rotation, so they stay the same as it rotates.  For the size of the upright box around the rotated object, use [getBoundingSize()](getBoundingSize.md).
 
 ## Parameters
 

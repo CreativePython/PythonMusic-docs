@@ -2,6 +2,8 @@
 
 Return the object's center point.
 
+The object rotates about its center, so this is always the same as [getBoundingCenter()](getBoundingCenter.md).
+
 If the object is a [Display](../../display/index.md), this returns the center point of the display's canvas.
 
 ## Parameters

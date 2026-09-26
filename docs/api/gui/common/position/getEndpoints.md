@@ -4,7 +4,7 @@ Return the object's current endpoints.
 
 For [Point](../../shapes/point/index.md), [Line](../../shapes/line/index.md), [Polyline](../../shapes/polyline/index.md), and [Polygon](../../shapes/polygon/index.md) objects, the endpoints are the original x and y coordinates used to create the object, accounting for the object moving, resizing, or rotating.
 
-For all other objects, the endpoints are the four corners enclosing the object.  The corners turn with the object, so a rotated object's endpoints are its actual tilted corners.  For the upright box around the object instead, use [getBoundingBox()](getBoundingBox.md).
+For all other objects, the endpoints are the four corners enclosing the object.  The corners turn with the object, so a rotated object's endpoints are its actual tilted corners.  For the upright box around the object instead, see the [Bounding Box Functions](../index.md#bounding-box-functions).
 
 **NOTE:** This function isn't available to [Displays](../../display/index.md).
 

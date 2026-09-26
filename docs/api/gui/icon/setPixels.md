@@ -1,8 +1,8 @@
 # setPixels()
 
-Replace every pixel in the image.
+Set the pixels of the image from a grid of colors.
 
-The pixels are arranged as a list of rows, each row a list of pixels, each pixel a list of red, green, blue, and (optional) alpha values. The image's top-left pixel is at [0][0].
+The pixels are arranged as a list of rows, each row a list of pixels, each pixel a list of red, green, blue, and (optional) alpha values. The grid's top-left pixel goes at the image's top-left, [0][0].  The grid may be smaller than the image, in which case only that top-left part of the image changes.
 
 ## Parameters
 

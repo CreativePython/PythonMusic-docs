@@ -16,4 +16,4 @@ label.getFont()
 
 | Value | Type | Description |
 |---|---|---|
-| font | `Font` | The label's font, or `None` if it uses the default font. |
+| font | `Font` | The font of the label's text.  If no font was given, this is the default font (Arial, size 13). |

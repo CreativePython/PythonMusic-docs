@@ -1,6 +1,6 @@
 # setSize()
 
-Set the font's point size.
+Set the font's size.
 
 ## Parameters
 
@@ -12,4 +12,4 @@ font.setSize(size)
 
 | Parameter | Type | Default | Description |
 |---|---|---|---|
-| `size` | `int` | _required_ | The new point size. |
+| `size` | `int` | _required_ | The new size, in pixels. |

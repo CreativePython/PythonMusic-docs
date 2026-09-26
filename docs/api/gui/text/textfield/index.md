@@ -13,7 +13,7 @@ TextField()
 ```
 
 ```python
-TextField(text, columns, action, color, font)
+TextField(text, columns, action, color, textColor, font, rotation, visibility)
 ```
 
 | Parameter | Type | Default | Description |
@@ -21,8 +21,9 @@ TextField(text, columns, action, color, font)
 | `text` | `str` | `''` | The text to start with. |
 | `columns` | `int` | `8` | The width of the field, in characters. |
 | `action` | `function` | `None` | The function to call when the user presses Enter in the field; it receives one parameter, the field's contents as a string. |
-| `color` | `Color` | `Color.WHITE` | The field color. |
-| `font` | `Font` | `None` | The font, for example `Font("Serif", Font.ITALIC, 16)`. If omitted, the default font is used. |
+| `color` | `Color` | `Color.WHITE` | The field's background color. |
+| `textColor` | `Color` | `Color.BLACK` | The text color. |
+| `font` | `Font` | `None` | The font, for example `Font("Serif", Font.ITALIC, 16)`. If omitted, the default font (Arial, size 13) is used. |
 | `rotation` | `int or float` | `0` | How far to turn the field, in degrees, counter-clockwise. |
 | `visibility` | `int` | `100` | How visible the field is, from 0 (invisible) to 100 (fully visible). |
 
@@ -46,6 +47,8 @@ Once a TextField has been created, the following functions are available:
 | [`setText(text)`](setText.md) | Set the text in the field. |
 | [`getColor()`](../../common/color/getColor.md) | Return the field's background color. |
 | [`setColor(color)`](../../common/color/setColor.md) | Set the field's background color. |
+| [`getTextColor()`](getTextColor.md) | Return the field's text color. |
+| [`setTextColor(color)`](setTextColor.md) | Set the field's text color. |
 | [`getFont()`](getFont.md) | Return the field's font. |
 | [`setFont(font)`](setFont.md) | Set the field's font. |
 

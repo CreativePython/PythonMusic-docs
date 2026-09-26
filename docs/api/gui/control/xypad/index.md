@@ -25,7 +25,7 @@ XYPad(x1, y1, x2, y2, action, foregroundColor, backgroundColor, outlineColor, ou
 | `action` | `function` | `None` | The function to call when the tracker moves; it receives the new [x, y] value. |
 | `foregroundColor` | `Color` | `Color.RED` | The color of the tracker. |
 | `backgroundColor` | `Color` | `Color.BLACK` | The color behind the tracker. |
-| `outlineColor` | `Color` | `Color.CLEAR` | The outline color. |
+| `outlineColor` | `Color` | `Color.RED` | The outline color. |
 | `outlineThickness` | `int` | `2` | The outline thickness, in pixels. |
 | `trackerRadius` | `int or float` | `10` | The radius of the tracker, in pixels. |
 | `crosshairThickness` | `int` | `None` | The thickness of the crosshair lines, in pixels. Defaults to the outline thickness. |
