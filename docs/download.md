@@ -10,7 +10,7 @@ PythonMusic runs on Windows, Mac, and Linux.
 
 ## Download and Install
 
-To install PythonMusic, simply [download](#installation-instructions) the **PEM** (Python Environment for Music) editor (version __%%version%%__ - released on _%%date%%_).
+To install PythonMusic, simply [download](#installation-instructions) the **PEM** (Python Environment for Music) editor - version __%%version%%__ - released _%%date%%_.
 
 There is also a [```pip``` installation](#install-via-pip-advanced) for advanced users. 
 
