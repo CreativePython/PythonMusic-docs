@@ -545,10 +545,10 @@ body { background-color: var(--pm-page-bg); }
    takes the job. Idle at desktop widths; engages only when a row can't fit. */
 .md-typeset__table { overflow-x: auto; }
 
-/* Code blocks at body size. Material sets all code — inline and fenced — to
-   0.85em; the child selector lifts only fenced blocks back to 1em (0.8rem),
-   leaving inline `code` in prose at its smaller step. */
+/* Code blocks and line numbers at body size.
+   Material sets all code to 0.85em.  The child selector lifts only fenced blocks back to 1em (0.8rem), leaving inline `code` in prose at its smaller step. */
 .md-typeset pre > code { font-size: 1em; }
+.md-typeset .highlighttable .linenos { font-size: 1em; }
 
 /* =========================================================================
    Code syntax-highlighting knobs
