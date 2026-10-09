@@ -10,13 +10,13 @@ from music import *
 score  = Score("Deep Purple, Smoke On The Water", 110)  # 110 bpm
 
 guitarPart = Part(OVERDRIVE_GUITAR, 0)
-bassPart = Part(ELECTRIC_BASS, 1)
-drumPart = Part(0, 9)    # using MIDI channel 9 (percussion)
+bassPart   = Part(ELECTRIC_BASS, 1)
+drumPart   = Part(0, 9)   # using MIDI channel 9 (percussion)
 
-guitarPhrase1 = Phrase(0.0)   # guitar opening melody
-guitarPhrase2 = Phrase(32.0)  # guitar opening melody an octave lower
-bassPhrase = Phrase(64.0)     # bass melody
-drumPhrase = Phrase(96.0)     # drum pattern
+guitarPhrase1 = Phrase(0.0)    # guitar opening melody
+guitarPhrase2 = Phrase(32.0)   # guitar opening melody an octave lower
+bassPhrase    = Phrase(64.0)   # bass melody
+drumPhrase    = Phrase(96.0)   # drum pattern
 
 ##### create musical data
 # guitar opening melody (16QN = 4 measures)
@@ -32,13 +32,13 @@ Mod.transpose(guitarPhrase2, -12)
 
 # bass melody (32EN = 4 measures)
 bassPitches1   = [G2, G2, G2, G2, G2, G2, G2, G2, G2, G2,
-                  G2, G2, G2, G2, G2, G2, G2, G2]
+                   G2, G2, G2, G2, G2, G2, G2, G2]
 bassDurations1 = [EN, EN, EN, EN, EN, EN, EN, EN, EN, EN,
-                  EN, EN, EN, EN, EN, EN, EN, EN]
+                   EN, EN, EN, EN, EN, EN, EN, EN]
 bassPitches2   = [AS2, AS2, C3, C3, C3, AS2, AS2, G2, G2,
-                  G2, G2, G2, G2, G2]
+                   G2, G2, G2, G2, G2]
 bassDurations2 = [EN,  EN,  EN, EN, EN, EN,  EN,  EN, EN,
-                  EN, EN, EN, EN, EN]
+                   EN, EN, EN, EN, EN]
 bassPhrase.addNoteList(bassPitches1, bassDurations1)
 bassPhrase.addNoteList(bassPitches2, bassDurations2)
 
