@@ -6,6 +6,10 @@ A program may have several displays open. Displays may contain any number of GUI
 
 Once a display has been created, you populate it by placing various GUI widgets and graphics objects on it. The library provides various GUI widgets and graphics objects.
 
+A display's [position](../common/index.md#position-functions) is the top-left corner of the window, including its title bar and [menu](../control/menu/index.md).  A display's [size](../common/index.md#size-functions) and [center](../common/position/getCenter.md) are its drawable canvas.
+
+![Display Position](../../../images/displayPosition.png){ align="center" }
+
 ## Creating a Display
 
 You can create a Display using the following functions:
@@ -21,8 +25,8 @@ Display(title, width, height, x, y, color, antialias)
 | Parameter | Type | Default | Description |
 |---|---|---|---|
 | `title` | `str` | `''` | The window title. |
-| `width` | `int or float` | `600` | The window width, in pixels. |
-| `height` | `int or float` | `400` | The window height, in pixels. |
+| `width` | `int or float` | `600` | The width of the window's canvas area, in pixels. |
+| `height` | `int or float` | `400` | The height of the window's canvas area, in pixels. |
 | `x` | `int or float` | `0` | The horizontal position of the window's top-left corner on the screen, in pixels. |
 | `y` | `int or float` | `50` | The vertical position of the window's top-left corner on the screen, in pixels. |
 | `color` | `Color` | `Color.WHITE` | The background color. |
@@ -33,6 +37,8 @@ For example,
 ```python
 display = Display("Simple GUI", 120, 60)
 ```
+
+You can use the [`getScreenSize()`](../getScreenSize.md) function to find out what width and height to use for a Display to fill the screen.
 
 ## Functions
 
