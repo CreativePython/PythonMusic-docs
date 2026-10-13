@@ -38,8 +38,6 @@ For example,
 display = Display("Simple GUI", 120, 60)
 ```
 
-You can use the [`getScreenSize()`](../getScreenSize.md) function to find out what width and height to use for a Display to fill the screen.
-
 ## Functions
 
 Once a Display has been created, the following functions are available:

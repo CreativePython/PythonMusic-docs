@@ -19,11 +19,3 @@ Unlike many other GUI libraries, this library has been designed to **“make sim
 | [Group](group/index.md) | A collection of GUI objects that move, resize, and rotate together. |
 | [Color](color/index.md) | RGB color objects and functions for color manipulation. |
 | [Events](event/index.md) | Functions for responding to mouse and keyboard events. |
-
-## Functions
-
-Once gui has been imported, the following function is available:
-
-| Function | Description |
-|---|---|
-| [`getScreenSize()`](getScreenSize.md) | Return the width and height of the largest [Display](display/index.md) that fits on the screen. |
