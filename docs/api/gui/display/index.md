@@ -25,8 +25,8 @@ Display(title, width, height, x, y, color, antialias)
 | Parameter | Type | Default | Description |
 |---|---|---|---|
 | `title` | `str` | `''` | The window title. |
-| `width` | `int or float` | `600` | The width of the window's canvas area, in pixels. |
-| `height` | `int or float` | `400` | The height of the window's canvas area, in pixels. |
+| `width` | `int or float` | `600` | The width of the window's canvas area, in pixels.  Set to `FULL` to fill the screen's width. |
+| `height` | `int or float` | `400` | The height of the window's canvas area, in pixels. Set to `FULL` to fill the screen's height. |
 | `x` | `int or float` | `0` | The horizontal position of the window's top-left corner on the screen, in pixels. |
 | `y` | `int or float` | `50` | The vertical position of the window's top-left corner on the screen, in pixels. |
 | `color` | `Color` | `Color.WHITE` | The background color. |
