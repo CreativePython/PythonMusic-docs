@@ -23,3 +23,5 @@ Play.audio(material, audioSamples, loopFlags, envelopes)
 | `audioSamples` | `list[AudioSample]` | _required_ | The audio samples to play with, one per channel. |
 | `loopFlags` | `list[bool]` | `[]` | Whether to loop each sample if a note outlasts it. Defaults to no looping. |
 | `envelopes` | `list[Envelope]` | `[]` | An envelope to shape each sample's volume over time. |
+
+Also, see other [`Play functions`](index.md).
