@@ -13,3 +13,6 @@ Play.midi(material)
 | Parameter | Type | Default | Description |
 |---|---|---|---|
 | `material` | `Note, Phrase, Part, or Score` | _required_ | The music to play. |
+
+
+Also, see other [`Play functions`](index.md).
