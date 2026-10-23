@@ -17,3 +17,5 @@ Play.code(material, actions)
 |---|---|---|---|
 | `material` | `Note, Phrase, Part, or Score` | _required_ | The music whose notes drive the timing. |
 | `actions` | `list[function]` | _required_ | The functions to call, one per channel. |
+
+Also, see other [`Play functions`](index.md).
