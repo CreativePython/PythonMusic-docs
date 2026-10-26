@@ -2,7 +2,7 @@
 
 The Play functions use a MIDI synthesizer to play musical material. The first function, [Play.midi()](midi.md), is used to render musical compositions stored in [Note](../transcription/note/index.md), [Phrase](../transcription/phrase/index.md), [Part](../transcription/part/index.md), and [Score](../transcription/score/index.md) objects. The other Play functions are more advanced, as they are intended for building interactive musical instruments and installations.
 
-## Creating a Play
+## Using Play
 
 Play is a static utility; you don't instantiate it like other objects.  Call its methods on the class itself.  For example,
 
@@ -37,8 +37,8 @@ The following Play functions are always available:
 | [`getVolume()`](getVolume.md) | Return the main volume for a channel. |
 | [`setPanning(panning)`](setPanning.md) | Set the main stereo position for a channel. |
 | [`getPanning()`](getPanning.md) | Return the main stereo position for a channel. |
-| [`getSoundfont()`](getSoundfont.md) | Return the path of the soundfont currently used for playback. |
 | [`setSoundfont(soundfont)`](setSoundfont.md) | Set the soundfont used for playback. |
+| [`getSoundfont()`](getSoundfont.md) | Return the path of the soundfont currently used for playback. |
 
 ### Playing Musical Material with AudioSamples
 
