@@ -14,5 +14,5 @@ def printValue(value):
    else:            # else value is False (i.e., push toggle is off)
       print("No")   # replace this with whatever you want done when off (if any)
 
-t = Toggle(25, 25, 50, 50, False, printValue, Color.WHITE, Color.BLACK, Color.RED, 1)
+t = Toggle(25, 25, 50, 50, printValue, Color.WHITE, Color.BLACK, Color.RED, 1)
 d.add(t)
