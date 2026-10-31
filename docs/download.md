@@ -123,6 +123,10 @@ For more advanced users, install PythonMusic via ```pip```.  This lets you use P
 ```
 pip install PythonMusic
 ```
+Or, to upgrade an earlier installation:
+```
+pip install --upgrade PythonMusic
+```
 
 If this fails, see [Troubleshooting Pip](troubleshoot.md).
 
@@ -130,9 +134,9 @@ If this fails, see [Troubleshooting Pip](troubleshoot.md).
 PythonMusic works on Python 3.12 and later, but Python 3.12 is the smoothest install.  A few of PythonMusic's dependencies don't yet offer ready-made versions for Python 3.13 and 3.14, so on those versions ```pip``` has to build them on your computer — which needs the extra tools described under [Troubleshooting Pip](troubleshoot.md).  If you'd rather not set those up, install Python 3.12.
 
 
-### PEM with pip
+### Running the PEM editor via pip
 
-Once PythonMusic is installed with ```pip```, you can access PEM via the command line:  
+Once PythonMusic is installed with ```pip```, you can run the PEM editor via the command line as follows:  
 
 
 ```
