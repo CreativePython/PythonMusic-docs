@@ -110,6 +110,8 @@ Another possibility is to use an AudioSample (instead of MIDI), which essentiall
 --8<-- "examples/_snippets/audioSynthesizer.py"
 ```
 
+Before running this program, download [the sound file](_snippets/strings - A4.wav){ download } in your PythonMusic folder.
+
 ---
 
 ## Create custom MIDI synthesizer #2
