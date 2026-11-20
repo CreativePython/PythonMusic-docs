@@ -18,7 +18,7 @@ OSC devices communicate via the Internet, so they do not have to be connected vi
 
 OSC messages consist of an *address* and optional *arguments*, e.g., “/oscillator/4/frequency 440.0”:
 
-- *Address* patterns look like a URL, e.g., “/oscillator/4/frequency”, “/button/1”, “slider/3”, etc. Any address is possible, as long as both OSC input and output devices use the same values. You can create your own, or use what a particular OSC device sends, e.g., [TouchOSC](https://hexler.net/software/touchosc).
+- *Address* patterns look like a URL, e.g., “/oscillator/4/frequency”, “/button/1”, “slider/3”, etc. Any address is possible, as long as both OSC input and output devices use the same values. You can create your own, or use what a particular OSC device sends, e.g., [TouchOSC](https://hexler.net/touchosc-mk1).
 
 - *Arguments* may be integers, floats, strings, and booleans. OSC messages may include an arbitrary number of arguments (zero or more).
 
